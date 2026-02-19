@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt</title>
+    <link rel="stylesheet" href="kontakt.css">
+</head>
+<body>
+
+<header class="header">
+    <a href="index.html" class="home-logo">
+        <img src="sp.svg" alt="Spetljana logo">
+    </a>
+
+    <nav class="main-nav" id="navMenu">
+        <ul>
+            <li><a href="index.html">Početna</a></li>
+            <li><a href="torbice.html">Torbice</a></li>
+            <li><a href="futrole.html">Futrole</a></li>
+            <li><a href="dodaci.html">Dodaci</a></li>
+            <li><a href="onama.html">O nama</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+    </nav>
+
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+</header>
+
+<script>
+function toggleMenu() {
+    document.getElementById("navMenu").classList.toggle("open");
+}
+</script>
+
+<section class="contact-wrapper">
+
+    <h1 class="contact-title">Kontakt</h1>
+
+    <div class="contact-container">
+
+        <div class="contact-info">
+            <h3>Imaš pitanje za nas? Slobodno nas kontaktiraj!</h3>
+            <p><strong>Email:</strong> info@spetljana.hr</p>
+            <p><strong>Facebook:</strong> Spetljana</p>
+            <p><strong>Instagram:</strong> spetljana.hr</p>
+
+            <div class="contact-info-image"> <img src="puna_torbica.jpeg" alt="Kontakt slika"> </div>
+        </div>
+
+        
+
+        <form class="contact-form">
+            <label>Ime i prezime</label>
+            <input type="text" placeholder="Vaše ime">
+
+            <label>Email</label>
+            <input type="email" placeholder="Vaš email">
+
+            <label>Poruka</label>
+            <textarea placeholder="Vaša poruka"></textarea>
+
+            <button type="submit">Pošalji</button>
+        </form>
+
+    </div>
+
+</section>
+
+<footer class="footer">
+    <p>© 2026 Spetljana</p>
+</footer>
+
+</body>
+</html>

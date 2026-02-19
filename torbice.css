@@ -1,0 +1,220 @@
+
+.home-logo img {
+    width: 120px;      
+    height: auto;
+    display: block;
+    margin: 0 auto 10px auto; 
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #F7DBE8;
+    font-family: serif;
+    color: #6b0b38;
+}
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: #6b0b38;
+    text-align: center;
+    padding: 30px 0;
+    position: relative;
+}
+
+h1 {
+    font-size:x-large;
+    text-align: center;
+    color: #6b0b38;
+    font-family: serif;
+}
+
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: white;
+    font-family: serif;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.main-nav a:hover {
+    color: #F7DBE8;
+}
+
+
+.hamburger {
+    display: none;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+@media (max-width: 800px) {
+
+    .hamburger {
+        display: block;
+    }
+
+    
+    .main-nav {
+        display: none;
+        width: 100%;
+        background-color: #6b0b38;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        padding: 20px 0;
+    }
+
+    .main-nav.open {
+        display: block;
+    }
+
+    .main-nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+}
+
+.header {
+    text-align: center;
+    padding: 30px 0;
+}
+
+.header h1 {
+    font-size: 2rem;
+}
+
+.bags-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+@media (max-width: 900px) {
+    .bags-section {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media (max-width: 600px) {
+    .bags-section {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+.bag-card {
+    background: white;
+    border-radius: 12px;
+    padding:20px;
+    text-align:center;
+    box-shadow:0 4px 15px rgba(0,0,0,0.1);
+}
+
+.bag-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.bag-card h3 {
+    margin-top: 15px;
+    font-size: 1.2rem;
+}
+
+.bag-card p {
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
+
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 0.9rem;
+}
+
+.model-info {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 35px 35px;
+    background: white;
+    border-radius: 14px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    color: #6b0b38;
+    font-family: serif;
+    text-align: left;
+}
+
+.model-info h2 {
+    text-align: center;
+    font-size: 1.9rem;
+    margin-bottom: 25px;
+    color: #6b0b38;
+}
+
+.model-info p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 18px;
+}
+
+
+@media (max-width: 700px) {
+    .model-info {
+        padding: 20px;
+        margin: 20px;
+        text-align: center;
+    }
+
+    .model-info h2 {
+        font-size: 1.5rem;
+    }
+
+    .model-info p {
+        font-size: 1rem;
+    }
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+
+.popup img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+}
+

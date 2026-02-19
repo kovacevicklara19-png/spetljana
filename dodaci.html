@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dodaci</title>
+    <link rel="stylesheet" href="torbice.css">
+</head>
+<body>
+<header class="header">
+    <a href="index.html" class="home-logo"> <img src="sp.svg" alt="Spetljana logo"> </a>
+
+    <nav class="main-nav" id="navMenu">
+        <ul>
+            <li><a href="index.html">Početna</a></li>
+            <li><a href="torbice.html">Torbice</a></li>
+            <li><a href="futrole.html">Futrole</a></li>
+            <li><a href="dodaci.html">Dodaci</a></li>
+            <li><a href="onama.html">O nama</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+    </nav>
+
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+</header>
+
+<script> 
+function toggleMenu() { 
+    document.getElementById("navMenu").classList.toggle("open"); } 
+</script>
+<br>
+<br>
+<br>
+<h1>Naša kolekcija modnih dodataka</h1>
+<section class="model-info">
+    <h2>Važna napomena</h2>
+    <p>
+        Sve fotografije koje vidite na ovoj stranici služe kao primjeri modela.
+        Dodaci se izrađuje isključivo <strong>po narudžbi</strong>,
+        u boji i kombinaciji koju sami odaberete.
+    </p>
+
+    <p>
+        Ne radimo serijsku proizvodnju i nemamo gotove proizvode na zalihi —
+        svaki komad nastaje polako, ručno i posebno za vas.
+    </p>
+
+    <p>
+        Ova stranica služi kao <strong>katalog ideja</strong>, gdje možete vidjeti stilove,
+        oblike i modele koji se mogu izraditi. Ako vam se neki model svidi,
+        možemo ga prilagoditi vašem ukusu: promijeniti boju, veličinu ili detalje.
+    </p>
+
+    <p><strong>Vaš modni dodatka bit će jedinstven — baš kao i vi.</strong></p>
+</section>
+<section class="bags-section">
+    <div class="bag-card">
+        <img src="privjesak.jpeg" alt="privjesak" onclick="openImage(this.src)">
+        <h3>Ekštra</h3>
+        <p>Opis: Ručno rađeni unikatni privjesak za torbe i ključeve.</p>
+    </div>
+
+    <div class="bag-card">
+        <img src="labelina.jpeg" alt="labelina" onclick="openImage(this.src)">
+        <h3>Labelina</h3>
+        <p>Opis: Koliko puta si prekopala cijelu torbu da nađeš labelo? </p>
+    </div>
+
+    <div class="bag-card">
+        <img src="bachenka.jpeg" alt="bachenka" onclick="openImage(this.src)">
+        <h3>Bachenka</h3>
+        <p>Opis: For girl boss.</p>
+    </div>
+
+</section>
+<div id="imagePopup" class="popup" onclick="closeImage()"> <img id="popupImg" src=""> </div>
+<footer class="footer">
+    <p>© 2026 Spetljana</p>
+</footer>
+<script> function openImage(src) { document.getElementById("popupImg").src = src; document.getElementById("imagePopup").style.display = "flex"; } function closeImage() { document.getElementById("imagePopup").style.display = "none"; } </script>
+</body>
+</html>

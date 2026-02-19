@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spetljana</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body >
+
+<header class="header">
+    <div class="logo2">
+        <img src="sp.svg" alt="Logo spetljana">
+    </div>
+    <h1 class="h1">Spetljana - spetljano s ljubavlju</h1>
+    <h3>Unikatne torbice, futrole za laptope i tablete te posebni modni dodaci!</h3>
+
+    <nav class="main-nav" id="navMenu">
+        <ul>
+            <li><a href="index.html">Početna</a></li>
+            <li><a href="torbice.html">Torbice</a></li>
+            <li><a href="futrole.html">Futrole</a></li>
+            <li><a href="dodaci.html">Dodaci</a></li>
+            <li><a href="onama.html">O nama</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+    </nav>
+
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+</header>
+
+<script> 
+function toggleMenu() { 
+    document.getElementById("navMenu").classList.toggle("open"); } 
+</script>
+
+<div class="container">
+    <img class="banner" src="slika1.jpeg">
+</div>
+<br>
+<br>
+<br>
+<br>
+
+<section class="hero">
+    <h2> Dobrodošli u svijet ručno rađenih torbica i futrola za laptop koje nisu samo dodatak — već izraz stila.</h2>
+    <br>
+    <h2>Više o brendu saznaj prelaskom preko kruga!</h2>
+</section>
+
+<div class="logo-row">
+    <div class="logo-wrapper">
+        <img src="krug1.png" class="logo">
+        <span class="logo-text">Svaki komad ispleten je s posebnom pažnjom prema detaljima.</span>
+    </div>
+
+    <div class="logo-wrapper">
+        <img src="krug2.png" class="logo">
+        <span class="logo-text">Koristimo kvalitetne i dugotrajne materijale.</span>
+    </div>
+
+    <div class="logo-wrapper">
+        <img src="krug3.png" class="logo">
+        <span class="logo-text">Naši proizvodi pružaju sigurnost vašem laptopu i ostalim sitnicama koje nosite sa sobom.</span>
+    </div>
+</div>
+
+<div class="wave">
+    <svg viewBox="0 0 1440 320" preserveAspectRatio="none">
+        <path d="M0,160 C120,200 240,240 360,240 C480,240 600,200 720,160 C840,120 960,80 1080,96 C1200,112 1320,176 1440,208 L1440,320 L0,320 Z"
+              fill="#6b0b38"></path>
+    </svg>
+</div>
+
+
+<section class="video-section">
+    <h2>Tražiš savršenu torbicu ili futrolu?</h2>
+
+    <div class="video-wrapper">
+        <video controls>
+            <source src="video-torbice.mp4" type="video/mp4">
+            Vaš preglednik ne podržava video element.
+        </video>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Spetljana</p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
